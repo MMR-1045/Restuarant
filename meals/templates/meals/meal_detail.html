@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block body %}
+
+    <div class="section">
+        <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-8" data-aos="fade-up">
+                        <img class="meal_image" src="{{meal_detail.image.url}}" alt="" style="width: 100% !important;">
+                        <h2>{{meal_detail}}</h2>
+                        <p>{{meal_detail.description}}</p>
+                        <p>For: {{meal_detail.people}} people</p>
+                        <p>Preparation time: {{meal_detail.preparation_time}} minutes</p>
+                        <p>Price: {{meal_detail.price}}$</p>
+                    </div>  
+                    
+
+            </div>
+        </div>
+    </div> 
+
+{% endblock body %}
